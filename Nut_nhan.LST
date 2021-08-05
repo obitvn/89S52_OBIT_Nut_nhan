@@ -1,0 +1,51 @@
+C51 COMPILER V9.57.0.0   NUT_NHAN                                                          01/26/2019 14:29:10 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE NUT_NHAN
+OBJECT MODULE PLACED IN Nut_nhan.OBJ
+COMPILER INVOKED BY: F:\Cai_Phan_Mem\Keil C 8051\C51\BIN\C51.EXE Nut_nhan.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND 
+                    -TABS(2)
+
+line level    source
+
+   1          // Chao mung ban den voi www.mualinhkien.vn
+   2          // Huong dan su dung kit 8051
+   3          // Lap trinh nut nhan
+   4          
+   5          #include <REGX51.H>
+   6          
+   7          void main(){             //Ham main chinh
+   8   1        while(1){
+   9   2          if(P3_3 == 0) P1_0 = 0;    //Nhan nut LED o PORT P1_0 sang
+  10   2          if(P3_3 == 1) P1_0 = 1;    //Khong nhan nut LED tat
+  11   2      
+  12   2          if(P3_5 == 0) P1_1 = 0;    //Nhan nut LED o PORT P1_1 sang
+  13   2          if(P3_5 == 1) P1_1 = 1;    //Khong nhan nut LED tat
+  14   2      
+  15   2          if(P3_4 == 0) P1_2 = 0;    //Nhan nut LED o PORT P1_2 sang
+  16   2          if(P3_4 == 1) P1_2 = 1;    //Khong nhan nut LED tat
+  17   2      
+  18   2          if(P3_7 == 0) P1_3 = 0;    //Nhan nut LED o PORT P1_3 sang
+  19   2          if(P3_7 == 1) P1_3 = 1;    //Khong nhan nut LED tat
+  20   2      
+  21   2          if(P3_6 == 0) P1_4 = 0;    //Nhan nut LED o PORT P1_3 sang
+  22   2          if(P3_6 == 1) P1_4 = 1;    //Khong nhan nut LED tat
+  23   2        }
+  24   1      }
+  25          
+  26          //Tren day là code nut nhan khi cac ban test ca 4 nut nhan
+  27          // Nhan vao se lam sang LED va khi tha ra LED se tat
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     52    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
